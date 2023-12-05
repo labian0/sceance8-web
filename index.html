@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .debug{
+            background-color: red;
+        }
+        .debug2{
+            background-color: blue;
+        }
+        #header-nav{
+            height: 100%;
+            margin-block: auto;
+        }
+        #header-nav > ul li {
+            display: inline;
+        }
+        #header-nav > ul li:not(:last-child){
+            margin-right: 5px;
+        }
+        header{
+            display: flex;
+            justify-content:space-around;
+            padding: 0%;
+            margin: 0;
+        }
+        #main-wrapper{
+            width: 750px;
+            margin: 0 auto;
+        }
+        a{
+            color: blue;
+        }
+        .bouton{
+            padding: 12px 7px;
+            background-color: blue;
+            color:white;
+            border-radius: 10%;
+        }
+        #grisatre{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-wrapper">
+        <header class="">
+            <h2 class="">L'IUT de Bordeaux</h2>
+            <nav id="header-nav" class="">
+                <ul class="">
+                    <li><a class="bouton">Home</a></li>
+                    <li><a>A Propos</a></li>
+                    <li><a>Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="grisatre">
+                <div class="img-wrapper">
+                    <img src="img/logo_u.png" alt="">
+                    <img src="img/logo_iut.jpg" alt="">
+                </div>
+                <p>
+                    L'université de Bordeaux cultive depuis 575 ans les valeurs universelles qui ont forgé sa réputation : humanisme, exigence créativité et diversité.
+                    L'école des savoirs encyclopédiques a évolué au fil du temps en une université pluridisciplinaire.
+                    Elle a su s'adapter à son environnement et se réinventer pour devenir une référence de l'enseignement supérieur et de la recherche.
+                </p>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
