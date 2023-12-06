@@ -34,15 +34,16 @@
             width: 750px;
             margin: 0 auto;
         }
-        main > *:not(:last-child){
+        #main-wrapper > *:not(:last-child), main > *:not(:last-child){
             margin-bottom: 50px;
         }
         a{
-            color: blue;
+            color: rgb(16, 148, 234);
+            font-weight: bold;
         }
         .bouton{
             padding: 12px 7px;
-            background-color: blue;
+            background-color: rgb(16, 148, 234);
             color:white;
             border-radius: 10%;
         }
@@ -63,6 +64,7 @@
         #logo-img-section img{
             height: 100px;
             width: auto;
+            padding: 5px;
         }
         #bouton-inscrire{
             display: inline-block;
@@ -97,19 +99,29 @@
             justify-content: space-around;
         }
         .savoir-plus{
-            background-color: lightgray;
             color: black;
             font-weight: bolder;
             padding: 10px 5px;
             border-radius: 5px;
             outline:solid;
-            outline-width: 2px;
-            outline-color: black;
+            outline-width: 1px;
+            outline-color: lightgray;
         }
         footer{
-            background-color: blue;
+            background-color: rgb(16, 148, 234);
             width: 100%;
             display: flex;
+        }
+        .footer-section{
+            padding: 0 15px;
+        }
+        footer a{
+            color: white;
+            text-decoration: underline;
+        }
+        footer ul{
+            list-style-type: none;
+            padding: 0;
         }
     </style>
 </head>
@@ -160,16 +172,42 @@
         </main>
         <footer>
             <div class="footer-section">
-                <h3>test</h3>
+                <h3>MENTIONS LÉGALES</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam qui voluptates, non illum cupiditate fugit inventore laboriosam labore rerum. Doloremque officia, odio asperiores distinctio non maiores alias? Dolorem, repudiandae modi.</p>
             </div>
             <div class="footer-section">
-                <h3>test</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam qui voluptates, non illum cupiditate fugit inventore laboriosam labore rerum. Doloremque officia, odio asperiores distinctio non maiores alias? Dolorem, repudiandae modi.</p>
+                <h3>CONTACTS</h3>
+                <ul>
+                    <li>
+                        <a>tel (33)556845785</a>
+                    </li>
+                    <li>
+                        <a>tel (33)556845785</a>
+                    </li>
+                    <li>
+                        <a>Envoyer un mail</a>
+                    </li>
+                    <li>
+                        <a>@iutInfoBdx</a>
+                    </li>
+                </ul>
             </div>
             <div class="footer-section">
-                <h3>test</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam qui voluptates, non illum cupiditate fugit inventore laboriosam labore rerum. Doloremque officia, odio asperiores distinctio non maiores alias? Dolorem, repudiandae modi.</p>
+                <h3>PLAQUETTES</h3>
+                <ul>
+                    <li>
+                        <a>DUT</a>
+                    </li>
+                    <li>
+                        <a>DAWIN</a>
+                    </li>
+                    <li>
+                        <a>DAGPI</a>
+                    </li>
+                    <li>
+                        <a>AS</a>
+                    </li>
+                </ul>    
             </div>
         </footer>
     </div>
