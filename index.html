@@ -14,6 +14,12 @@
         .debug2{
             background-color: blue;
         }
+        .bleu{
+            color: #0375D8;
+        }
+        .bleu-background{
+            background-color: #0375D8;
+        }
         #header-nav{
             height: 100%;
             margin-block: auto;
@@ -38,13 +44,11 @@
             margin-bottom: 50px;
         }
         a{
-            color: rgb(16, 148, 234);
             font-weight: bold;
             text-decoration: none;
         }
         .bouton{
             padding: 12px 7px;
-            background-color: rgb(16, 148, 234);
             color:white;
             border-radius: 10%;
         }
@@ -74,6 +78,10 @@
             border-radius: 5px;
             color: white;
             font-weight: bold;
+            transition: 200ms;
+        }
+        #bouton-inscrire:hover{
+            background-color: darkgreen;
         }
         .carte{
             display: flex;
@@ -89,10 +97,14 @@
             width: 150px;
         }
         .img-wrapper img{
+            transition: 500ms;
             height: 100%;
             width: 100%;
             object-fit:cover;
             border-radius: 50%;
+        }
+        .img-wrapper:hover img{
+            border-radius: 5%;
         }
         #blanche{
             display: flex;
@@ -109,7 +121,6 @@
             outline-color: lightgray;
         }
         footer{
-            background-color: rgb(16, 148, 234);
             width: 100%;
             display: flex;
         }
@@ -120,6 +131,9 @@
             color: white;
             text-decoration: underline;
             white-space: nowrap;
+        }
+        footer a.clickable:hover{
+            color: darkblue;
         }
         footer ul{
             list-style-type: none;
@@ -133,17 +147,17 @@
             <h2 class="">L'IUT de Bordeaux</h2>
             <nav id="header-nav" class="">
                 <ul class="">
-                    <li><a class="bouton" href="">Home</a></li>
-                    <li><a href="">A Propos</a></li>
-                    <li><a href="">Contacts</a></li>
+                    <li><a class="bouton bleu-background" href="">Home</a></li>
+                    <li><a href="" class="bleu">A Propos</a></li>
+                    <li><a href="" class="bleu">Contacts</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <div id="grisatre">
                 <div id="logo-img-section">
-                    <img src="img/logo_u.png" alt="">
-                    <img src="img/logo_iut.jpg" alt="">
+                    <img src="img/logo_u.png" alt="logo université bordeaux">
+                    <img src="img/logo_iut.jpg" alt="logo iut">
                 </div>
                 <p>
                     L'université de Bordeaux cultive depuis 575 ans les valeurs universelles qui ont forgé sa réputation : humanisme, exigence créativité et diversité.
@@ -156,7 +170,7 @@
             <div id="blanche">
                 <div class="carte">
                     <div class="img-wrapper">
-                        <img src="img/mathieu.jpg" alt="">
+                        <img src="img/mathieu.jpg" alt="photo de mathieu">
                     </div>
                     <h2>LP</h2>
                     <p>DAWIN: vous avez un bac+2 en informatique ? Devenez développeur full-stack</p>
@@ -164,7 +178,7 @@
                 </div>
                 <div class="carte">
                     <div class="img-wrapper">
-                        <img src="img/swan.jpg" alt="">
+                        <img src="img/swan.jpg" alt="miniature de swan the voice">
                     </div>
                     <h2>DUT</h2>
                     <p>AS : vous souhaitez reprendre vos études ? Devenez informaticien en un an.</p>
@@ -172,7 +186,7 @@
                 </div>
             </div>
         </main>
-        <footer>
+        <footer class="bleu-background">
             <div class="footer-section">
                 <h3>MENTIONS LÉGALES</h3>
                 <p>
@@ -191,7 +205,7 @@
                         <a href="">tel (33)556845785</a>
                     </li>
                     <li>
-                        <a href="">Envoyer un mail</a>
+                        <a href="mailto:antoinelalaguebinos@gmail.com" class="clickable">Envoyer un mail</a>
                     </li>
                     <li>
                         <a href="">@iutInfoBdx</a>
